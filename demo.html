@@ -1,0 +1,110 @@
+<!DOCTYPE html">
+<html>
+<head>
+<meta charset="utf-8">
+<title>jQuery HTML5-Placeholder Plugin</title>
+<meta http-equiv="X-UA-Compatible" content="IE=8">
+<link rel="stylesheet" href="reset.css">
+<link rel="stylesheet" href="jquery.html5.placeholder-0.1.0.css">
+<style type="text/css">
+html {
+	font: 12px Arial, Helvetica, sans-serif;
+	color: #000;
+	zoom: 1;
+	overflow: auto;	/* to hide the vertical scroll bar for IE7*/
+}
+body {
+	height: 100%;
+	background-color: #eee;
+}
+h1 {
+	font-size: 30px;	
+}
+h2 {
+	font-size: 18px;
+	margin-bottom: 10px; 
+}
+ul {
+	margin-bottom: 15px;
+	list-style: disc;
+}
+ul li {
+	margin-left: 15px;
+	line-height: 1.5em;
+	font-weight: bold;
+}
+ul li span.label {
+	display: inline-block;
+	width: 130px;
+	font-weight: normal;
+}
+p {
+	margin-bottom: 15px;
+}
+pre {
+	margin-bottom: 15px;
+	padding: 10px;
+	border-left: 4px solid #ccc;
+	background-color: lightyellow;
+	line-height: 1.5em;
+}
+.hd, .bd, .ft {
+	margin: 0;
+	padding: 15px;
+	zoom: 1;
+}
+.hd {
+	height: 40px;
+}
+.bd {
+	background-color: #fff;
+}
+.ft {
+	height: auto;
+}
+</style>
+</head>
+
+<body>
+<div class="hd">
+	<h1>jQuery HTML5-Placeholder Plugin</h1>
+</div>
+
+<div class="bd">
+	<ul>
+		<li><span class="label">Current Version:</span> 0.1.0</li>
+		<li><span class="label">Compressed Size:</span> ? KB</li>
+		<li><span class="label">Uncompressed Size:</span> ? KB</li>
+		<li><span class="label">Dependency:</span> jQuery 1.5.2</li>
+		<li><span class="label">Browser Supported:</span> IE 7/8, FF 3.6.x, Chrome 8.0.x, Safari 5.0.x</li>
+	</ul>
+	<h2>Example</h2>
+	<p>
+		<label style="margin-right: 5px;">E-mail:</label>
+		<input type="text" name="email" placeholder="Your email address" value="123" style="width: 200px;">
+	</p>
+	<h2>Markup</h2>
+	<pre>
+
+	</pre>
+	<h2>jQuery</h2>
+	<pre>
+$(function() {
+	
+});
+	</pre>
+</div>
+
+<div class="ft">
+	<p>Copyright &copy; 2011 Jack Hsieh. All right reserved.</p>
+</div>
+
+<script src="jquery-latest.min.js"></script>
+<script src="jquery.html5.placeholder-0.1.0.js"></script>
+<script type="text/javascript">
+$(function() {
+	$('input[placeholder!=""]').placeholder();
+});
+</script> 
+</body>
+</html>
